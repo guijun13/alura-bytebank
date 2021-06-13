@@ -9,5 +9,13 @@ public class TesteSacaNegativo {
 		
 		conta.setNumero(1223);
 		System.out.println(conta.getNumero());
+		
+		Cliente jun = new Cliente();
+		jun.setNome("Guilherme Jun Grillo");
+		conta.setTitular(jun);
+		
+		System.out.println(conta.getTitular().getNome());
+		
+		conta.getTitular().setProfissao("estudante");
 	}
 }
