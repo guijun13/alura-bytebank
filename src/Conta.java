@@ -1,6 +1,6 @@
 class Conta { 
 	// atributos
-    double saldo;
+    private double saldo; // quando um atributo eh privado, ele nao pode ser lido nem alterado em outra classe
     int agencia;
     int numero;
 //    String titular;
@@ -32,5 +32,9 @@ class Conta {
     		return true;
     	}
     	return false;
+    }
+    
+    public double getSaldo() {
+    	return this.saldo;
     }
 }
