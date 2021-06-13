@@ -6,5 +6,8 @@ public class TesteSacaNegativo {
 		System.out.println(conta.saca(200)); // nao acontece pois 200>100
 		// conta.saldo() -> nao funciona mais pq saldo eh privado a classe Conta
 		System.out.println(conta.getSaldo());
+		
+		conta.setNumero(1223);
+		System.out.println(conta.getNumero());
 	}
 }

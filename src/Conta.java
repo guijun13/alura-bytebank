@@ -1,10 +1,11 @@
 class Conta { 
 	// atributos
-    private double saldo; // quando um atributo eh privado, ele nao pode ser lido nem alterado em outra classe
-    int agencia;
-    int numero;
+	// quando um atributo eh privado, ele nao pode ser lido nem alterado em outra classe
+    private double saldo;
+    private int agencia;
+    private int numero;
 //    String titular;
-    Cliente titular;
+    private Cliente titular;
     
     // métodos
     public void deposita(double valor) {
@@ -37,4 +38,21 @@ class Conta {
     public double getSaldo() {
     	return this.saldo;
     }
+    
+    public int getNumero() {
+    	return this.numero;
+    }
+    
+    public void setNumero(int numero) {
+    	this.numero = numero;
+    }
+    
+    public int getAgencia() {
+		return this.agencia;
+	}
+    
+    public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+    
 }
