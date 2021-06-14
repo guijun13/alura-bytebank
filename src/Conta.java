@@ -1,5 +1,5 @@
 class Conta { 
-	// atributos
+	// atributos ------------------------------------------
 	// quando um atributo eh privado, ele nao pode ser lido nem alterado em outra classe
     private double saldo;
     private int agencia;
@@ -7,7 +7,13 @@ class Conta {
 //    String titular;
     private Cliente titular;
     
-    // métodos
+    // contrutor -------------------------------------------
+    public Conta(int agencia, int numero) {
+    	this.agencia = agencia;
+    	this.numero = numero;
+    }
+    
+    // métodos ---------------------------------------------
     public void deposita(double valor) {
     	this.saldo += valor;
     }
@@ -44,6 +50,10 @@ class Conta {
     }
     
     public void setNumero(int numero) {
+    	if(numero <= 0) {
+    		System.out.println("Numero nao pode ser menor ou igual a 0");
+    		return;
+    	}
     	this.numero = numero;
     }
     
@@ -52,6 +62,10 @@ class Conta {
 	}
     
     public void setAgencia(int agencia) {
+    	if(agencia <= 0) {
+    		System.out.println("Numero nao pode ser menor ou igual a 0");
+    		return;
+    	}
 		this.agencia = agencia;
 	}
     
