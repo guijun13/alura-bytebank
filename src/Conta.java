@@ -6,9 +6,11 @@ class Conta {
     private int numero;
 //    String titular;
     private Cliente titular;
+    private static int total; // quando eh static, eh compartilhado entre as instancias
     
-    // contrutor -------------------------------------------
+    // constructor -------------------------------------------
     public Conta(int agencia, int numero) {
+    	Conta.total++;
     	this.agencia = agencia;
     	this.numero = numero;
     }
@@ -75,6 +77,10 @@ class Conta {
     
     public Cliente getTitular() {
 		return titular;
+	}
+    
+    public static int getTotal() { // quando tem static, eh um metodo da classe Conta()
+		return Conta.total;
 	}
     
 }

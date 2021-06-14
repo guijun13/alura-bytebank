@@ -15,6 +15,10 @@ public class TesteSacaNegativo {
 		System.out.println(conta.getTitular().getNome());
 		conta.getTitular().setProfissao("estudante");
 		
+		Conta conta2 = new Conta(1321,132);
+		
+		System.out.println("Total de contas: " + Conta.getTotal());
+		
 		
 	}
 }
