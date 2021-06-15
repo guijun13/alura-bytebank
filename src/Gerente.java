@@ -15,11 +15,14 @@ public class Gerente extends Funcionario { // Classe Gerente herda as caracteris
 		}
 	}
 	
+	public double getBonificacao() {
+		// super -> fala que o atributo eh da classe mae
+		// super.getBonificacao() chama o metodo da classe mae
+		return super.getBonificacao() + super.getSalario();
+	}
+
+	
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}
-
-//	public double getBonificacao() {
-//		return this.salario;			
-//	}
 }

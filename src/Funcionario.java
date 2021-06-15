@@ -2,7 +2,7 @@
 public class Funcionario {
 	private String nome;
 	private String cpf;
-	private double salario;
+	private double salario; // protected -> public para os filhos, mas private para outras classes
 	
 	public Funcionario() {
 		
