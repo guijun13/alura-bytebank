@@ -1,7 +1,7 @@
-class Conta { 
+public abstract class Conta { 
 	// atributos ------------------------------------------
 	// quando um atributo eh privado, ele nao pode ser lido nem alterado em outra classe
-    private double saldo;
+    protected double saldo;
     private int agencia;
     private int numero;
 //    String titular;
@@ -16,9 +16,7 @@ class Conta {
     }
     
     // métodos ---------------------------------------------
-    public void deposita(double valor) {
-    	this.saldo += valor;
-    }
+    public abstract void deposita(double valor);
     
     public boolean saca(double valor) {
     	if(this.saldo >= valor) {
@@ -42,8 +40,8 @@ class Conta {
     	}
     	return false;
     }
-    
-    public double getSaldo() {
+        
+	public double getSaldo() {
     	return this.saldo;
     }
     
