@@ -24,12 +24,12 @@ public class TesteGerente {
 		g2.setCpf("9039021212-1");
 		g2.setSalario(9000);
 		
-		Funcionario f = new Funcionario();
-		f.setSalario(2500);
+		// nao funciona pq a classe Funcionario tem abstract
+//		Funcionario f = new Funcionario();
+//		f.setSalario(2500);
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(g1);
-		controle.registra(f);
 		
 		System.out.println(controle.getSoma());
 		

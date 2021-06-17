@@ -1,5 +1,6 @@
-
-public class Funcionario {
+// com abstract, nao permite instanciar objetos (new) dessa classe
+// nao funciona mais -> Funcionario f = new Funcionario();
+public abstract class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario; // protected -> public para os filhos, mas private para outras classes
