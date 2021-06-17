@@ -8,7 +8,7 @@ class Conta {
     private Cliente titular;
     private static int total; // quando eh static, eh compartilhado entre as instancias
     
-    // constructor -------------------------------------------
+    // constructor ------------------------------------------- 
     public Conta(int agencia, int numero) {
     	Conta.total++;
     	this.agencia = agencia;
