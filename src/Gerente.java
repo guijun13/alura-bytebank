@@ -16,9 +16,10 @@ public class Gerente extends Funcionario { // Classe Gerente herda as caracteris
 	}
 	
 	public double getBonificacao() {
+		System.out.println("Metodo de bonificacao do gerente");
 		// super -> fala que o atributo eh da classe mae
 		// super.getBonificacao() chama o metodo da classe mae
-		return super.getBonificacao() + super.getSalario();
+		return super.getSalario();
 	}
 
 	

@@ -9,9 +9,9 @@ public abstract class Funcionario {
 		
 	}
 		
-	public double getBonificacao() {
-		return this.salario * 0.1;			
-	}
+	// metodo abstrato
+	// aqui nao ha uma implementacao, mas sim nos filhos	
+	public abstract double getBonificacao();
 			
 	public String getNome() {
 		return nome;
